@@ -103,9 +103,6 @@ main .container {
 
 .indicators .indicator_3 span {
     cursor: pointer;
-    position: absolute;
-    left: 82rem;
-    bottom: 37rem;
     background-color: rgb(17, 210, 17);
     border-radius: 20px;
     padding: 10px;
@@ -160,4 +157,15 @@ main .container {
     position: relative;
     right: 0.5rem;
     top: 1rem;
+}
+
+.indicator_3_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.indicator_3 span {
+    position: absolute;
+    margin-left: 10rem;
 }

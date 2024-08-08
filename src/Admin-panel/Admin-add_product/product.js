@@ -23,4 +23,4 @@ form.addEventListener("submit", (e) => {
       alert("You succes sent your information 🎉");
       e.target.reset();
   }
-});
+}); 

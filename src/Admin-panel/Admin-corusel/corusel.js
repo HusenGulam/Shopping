@@ -20,7 +20,7 @@ form.addEventListener("submit", (e) => {
       .then((data) => console.log(data))
       .catch((err) => console.log(err));
 
-      alert("You succes sent your information 🎉");
-      e.target.reset();
+    alert("You succes sent your information 🎉");
+    e.target.reset();
   }
 });

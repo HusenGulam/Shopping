@@ -29,14 +29,14 @@ main .container {
     width: 100%;
     height: auto;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .indicators .indicator_1 {
     border-radius: 25px;
     display: grid;
     place-items: center;
-    width: 30%;
+    width: 25%;
     height: 30vh;
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: #f7f7f7
@@ -46,7 +46,7 @@ main .container {
     border-radius: 25px;
     display: grid;
     place-items: center;
-    width: 30%;
+    width: 25%;
     height: 30vh;
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: #f7f7f7
@@ -56,7 +56,7 @@ main .container {
     border-radius: 25px;
     display: grid;
     place-items: center;
-    width: 30%;
+    width: 25%;
     height: 30vh;
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: #f7f7f7

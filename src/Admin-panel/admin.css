@@ -115,6 +115,7 @@ main .container {
 }
 
 #titleSecond {
+    cursor: pointer;
     margin-top: 1rem;
 }
 

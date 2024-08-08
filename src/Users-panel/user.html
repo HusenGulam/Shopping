@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../Admin-panel/navBar.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./navBarUser.css">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+</head>
+
+<body>
+<header>
+    <nav data-main-nav>
+        <div class="container">
+            <div class="rowFirst">
+                <i class="fas fa-solid fa-bars" id="barsMain"></i>
+                <a id="logo1" href="user.html"><img id="logo" src="logo.png"></a>
+
+                <ul>
+                    <li><a href="user.html">Home</a></li>
+                    <li><a href="./Electronics/electronics.html">Electronics</a></li>
+                    <li><a href="./Clothes/clothes.html">Clothes</a></li>
+                    <li><a href="./Sport/sport.html">Sport</a></li>
+                    <li><a href="./Accessories/accessories.html">Accessories</a></li>
+                    <li><a href="./Food/food.html">Food</a></li>
+                </ul>
+
+                <button id="loginBtn"><i class="fas fa-regular fa-user"></i> Log in</button>
+            </div>
+            <div class="menuBar" data-menu-bar>
+                <div class="container2">
+                    <ul>
+                        <li><a href="user.html">Home</a></li>
+                        <li><a href="./Electronics/electronics.html">Electronics</a></li>
+                        <li><a href="./Clothes/clothes.html">Clothes</a></li>
+                        <li><a href="./Sport/sport.html">Sport</a></li>
+                        <li><a href="./Accessories/accessories.html">Accessories</a></li>
+                        <li><a href="./Food/food.html">Food</a></li>
+                        <li id="loginLi"><a href="#">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <div class="modalSearch">
+        <input type="text" id="searchInp" placeholder="search-product">
+        <button id="searchBtn">Search</button>
+    </div>
+
+</header>
+<script src="./user.js"></script>
 </body>
+
 </html>

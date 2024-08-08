@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Product</h1>
-</body>
+    <link rel="stylesheet" href="../navBar.css" />
+    <link rel="stylesheet" href="./product.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="../Admin-panel/admin.html"
+              ><i class="fas fa-solid fa-house"></i>Home</a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="../Admin-panel/Admin-corusel/corusel.html"
+              ><i class="fas fa-solid fa-sliders"></i>Add Carousel</a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="../Admin-panel/Admin-add_product/product.html"
+              ><i class="fas fa-brands fa-product-hunt"></i>Add Products</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Add Product</h1>
+
+      <form method="dialog">
+        <label for=""
+          ><h3>Img</h3>
+          <input type="url" name="img" placeholder="Img" required />
+        </label>
+        <label for=""
+          ><h3>Name</h3>
+          <input type="text" name="name" placeholder="Name" required />
+        </label>
+        <label for=""
+          ><h3>About</h3>
+
+          <input type="text" name="about" placeholder="About" required />
+        </label>
+        <label for=""
+          ><h3>Price</h3>
+
+          <input type="number" name="price" placeholder="Price" required />
+        </label>
+        <label for=""
+          ><h3>Discount</h3>
+          <input
+            type="number"
+            placeholder="Discount"
+            value="0"
+            name="discount"
+          />
+        </label>
+        <label for=""
+        ><h3>Type</h3>
+        <select name="type" id="">
+          <option value="electronics">Electronics</option>
+          <option value="clothes">Clothes</option>
+          <option value="sport">Sport</option>
+          <option value="construction_materials">Construction materials</option>
+          <option value="food">Food</option>
+        </select>
+      </label>
+
+        <button type="submit">Add</button>
+      </form>
+    </main>
+    <script src="./product.js"></script>
+  </body>
 </html>

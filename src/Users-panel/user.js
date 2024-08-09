@@ -150,9 +150,31 @@ try{
 
     function createHomeProduct(product){
 
-      
+      let sport = product.filter((item) => item.type == "sport")
+      let clothes = product.filter((item) => item.type == "clothes")
+      let food = product.filter((item) => item.type == "food")
+      let aksessuars = product.filter((item) => item.type == "Aksessuars")
+      let electronics = product.filter((item) => item.type == "electronics")
+
+      let product_general_box = document.getElementById("product_general_box");
+
+      sport.forEach((element) =>{
+        let section = document.createElement("section");
+        section.classList =  "main_section";
+        product_general_box.appendChild(section);
+        let box = document.createElement("div");
+        box.classList = "box";
+        section.appendChild(box);
+        
+      })
 
       console.log(product);
+      console.log(sport);
+      console.log(clothes);
+      console.log(food);
+      console.log(aksessuars);
+      console.log(electronics);
+
     }
   
 

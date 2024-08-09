@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .carusel_section {
   width: 100%;
@@ -22,22 +23,34 @@
 
 
 
+=======
+>>>>>>> bfe96457248b36b4579856f747fa9ba3fb7e6e44
 /* Footer */
+<<<<<<< HEAD
+footer {
+    position: relative;
+    top: 10rem;
+}
+.double-passages {
+=======
 footer{
     background-color: rgb(32, 155,162 );
     
 }
 .double-passages{
+>>>>>>> afe19b107f4fcd523a06c0e18cd3402b9ae8b6d1
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-.passage1{
+
+.passage1 {
     width: 50%;
     height: 27vh;
 }
 
+<<<<<<< HEAD
 .carousel-item {
   display: flex;
   align-items: center;
@@ -61,6 +74,9 @@ footer{
 }
 
 .carousel-content {
+=======
+.trouble-text-footer {
+>>>>>>> bfe96457248b36b4579856f747fa9ba3fb7e6e44
     width: 70%;
   position: relative;
   color: white;
@@ -73,6 +89,7 @@ footer{
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+<<<<<<< HEAD
 .carousel-content:hover {
   transform: translateY(0);
   background-color: #047a8267; /* Darker background on hover */
@@ -144,6 +161,24 @@ footer{
   }
 
   .carousel-description {
+=======
+.footer-text1 {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-text1 small {
+    font-size: 1rem;
+}
+
+.footer-text1 h2 {
+    font-size: 2rem;
+}
+
+.footer-text2 a {
+>>>>>>> bfe96457248b36b4579856f747fa9ba3fb7e6e44
     font-size: 1rem;
   }
 
@@ -161,6 +196,7 @@ footer{
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 450px) {
   .carousel {
     width: 90%;
@@ -202,6 +238,15 @@ footer{
 }
 
 .footer-text2 h2{
+=======
+.footer-text2 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-text2 h2 {
+>>>>>>> bfe96457248b36b4579856f747fa9ba3fb7e6e44
     font-size: 2rem;
 }
 .logo-footer{

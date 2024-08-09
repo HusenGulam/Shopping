@@ -130,3 +130,6 @@ nextBtn.addEventListener("click", () => {
 // Initialize carousel and start auto-slide
 showItem(currentIndex);
 startAutoSlide();
+
+
+

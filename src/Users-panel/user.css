@@ -1,17 +1,16 @@
 /* Footer */
-<<<<<<< HEAD
+
 footer {
     position: relative;
     top: 10rem;
 }
-.double-passages {
-=======
+
 footer{
     background-color: rgb(32, 155,162 );
     
 }
 .double-passages{
->>>>>>> afe19b107f4fcd523a06c0e18cd3402b9ae8b6d1
+
     display: flex;
     align-items: center;
     justify-content: space-between;

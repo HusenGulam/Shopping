@@ -167,6 +167,18 @@ try{
         section.appendChild(box);
         
       })
+      clothes.forEach((element) =>{
+        let section = document.createElement("section");
+        section.classList =  "main_section";
+        product_general_box.appendChild(section);
+        let box = document.createElement("div");
+        box.classList = "box";
+        section.appendChild(box);
+        
+      })
+
+
+
       
 
       

@@ -1,3 +1,4 @@
+
 const barsMain = document.getElementById("barsMain");
 const menuBar = document.querySelector("[data-menu-bar]");
 const mainNav = document.querySelector("[data-main-nav]");
@@ -130,3 +131,56 @@ nextBtn.addEventListener("click", () => {
 // Initialize carousel and start auto-slide
 showItem(currentIndex);
 startAutoSlide();
+
+
+
+
+
+
+
+
+
+
+try{
+  async function homeGeneralProduct(){
+    await fetch("https://66b47c1f9f9169621ea321ce.mockapi.io/products")
+    .then(res => res.json())
+    .then(data => createHomeProduct(data))
+
+
+    function createHomeProduct(product){
+
+      let sport = product.filter((item) => item.type == "sport")
+      let clothes = product.filter((item) => item.type == "clothes")
+      let food = product.filter((item) => item.type == "food")
+      let aksessuars = product.filter((item) => item.type == "Aksessuars")
+      let electronics = product.filter((item) => item.type == "electronics")
+
+      let product_general_box = document.getElementById("product_general_box");
+
+      sport.forEach((element) =>{
+        let section = document.createElement("section");
+        section.classList =  "main_section";
+        product_general_box.appendChild(section);
+        let box = document.createElement("div");
+        box.classList = "box";
+        section.appendChild(box);
+        
+      })
+
+      console.log(product);
+      console.log(sport);
+      console.log(clothes);
+      console.log(food);
+      console.log(aksessuars);
+      console.log(electronics);
+
+    }
+  
+
+  }
+  homeGeneralProduct();
+}catch(e){
+  console.log(e.message);
+}
+

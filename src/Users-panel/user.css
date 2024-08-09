@@ -1,46 +1,53 @@
-
-
-
-
-
 /* Footer */
-.double-passages{
+footer {
+    position: relative;
+    top: 10rem;
+}
+.double-passages {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-.passage1{
+
+.passage1 {
     width: 50%;
 }
-.trouble-text-footer{
+
+.trouble-text-footer {
     width: 70%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.footer-text1{
+
+.footer-text1 {
     width: 28%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.footer-text1 small{
+
+.footer-text1 small {
     font-size: 1rem;
 }
-.footer-text1 h2{
+
+.footer-text1 h2 {
     font-size: 2rem;
 }
-.footer-text2 a{
+
+.footer-text2 a {
     font-size: 1rem;
     color: black;
 }
-.footer-text2{
+
+.footer-text2 {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-.footer-text2 h2{
+
+.footer-text2 h2 {
     font-size: 2rem;
 }

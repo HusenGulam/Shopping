@@ -145,3 +145,10 @@ footer{
         width: 25%;
     }
 }
+#loginBtn:hover{
+    background-color: rgba(32, 155,162,2 );
+}
+#searchBtn:hover{
+    background-color: rgba(32, 155,162,2 );
+
+}

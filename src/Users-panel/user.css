@@ -1,52 +1,252 @@
+<<<<<<< HEAD
+
+.carusel_section {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.carousel {
+    border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+  height: 50vh; /* Increase height for better visibility */
+  display: flex;
+  align-items: center;
+}
 
 
 
 
 
+=======
+>>>>>>> bfe96457248b36b4579856f747fa9ba3fb7e6e44
 /* Footer */
+<<<<<<< HEAD
+footer {
+    position: relative;
+    top: 10rem;
+}
+.double-passages {
+=======
 footer{
     background-color: rgb(32, 155,162 );
     
 }
 .double-passages{
+>>>>>>> afe19b107f4fcd523a06c0e18cd3402b9ae8b6d1
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-.passage1{
+
+.passage1 {
     width: 50%;
     height: 27vh;
 }
-.trouble-text-footer{
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+<<<<<<< HEAD
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
 }
-.footer-text1{
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.carousel-content {
+=======
+.trouble-text-footer {
+>>>>>>> bfe96457248b36b4579856f747fa9ba3fb7e6e44
+    width: 70%;
+  position: relative;
+  color: white;
+  z-index: 1;
+  padding: 20px;
+  max-width: 80%;
+  background: transparent; /* Darker background for better contrast */
+  border-radius: 15px;
+  transform: translateY(10px);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+<<<<<<< HEAD
+.carousel-content:hover {
+  transform: translateY(0);
+  background-color: #047a8267; /* Darker background on hover */
+}
+
+.carousel-title {
+  font-size: 2.5rem;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.carousel-description {
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+}
+
+.carousel-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.carousel-discount {
+  font-size: 1.2rem;
+  color: #ff6f61; /* Bright discount color */
+  font-weight: bold;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.carousel button:hover {
+  background: #047982;
+}
+
+.prev-btn {
+  left: 20px;
+  border-radius: 3px;
+
+  background-color: #047982;
+}
+
+.next-btn {
+  background-color: #047982;
+  right: 20px;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    width: 90%;
+    height: 50vh; /* Adjust height for smaller screens */
+  }
+
+  .carousel-title {
+    font-size: 2rem;
+  }
+
+  .carousel-description {
+=======
+.footer-text1 {
     width: 28%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.footer-text1 small{
+
+.footer-text1 small {
     font-size: 1rem;
 }
-.footer-text1 h2{
+
+.footer-text1 h2 {
     font-size: 2rem;
 }
-.footer-text2 a{
+
+.footer-text2 a {
+>>>>>>> bfe96457248b36b4579856f747fa9ba3fb7e6e44
     font-size: 1rem;
-    color: black;
+  }
+
+  .carousel-price {
+    font-size: 1.2rem;
+  }
+
+  .carousel-discount {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
 }
-.footer-text2{
+
+<<<<<<< HEAD
+@media (max-width: 450px) {
+  .carousel {
+    width: 90%;
+    height: 30vh; /* Adjust height for smaller screens */
+  }
+
+  .carousel-title {
+    font-size: 1rem;
+  }
+
+  .carousel-description {
+    font-size: 1rem;
+  }
+
+  .carousel-price {
+    font-size: 1.2rem;
+  }
+
+  .carousel-discount {
+    font-size: 1rem;
+  }
+
+  .carousel button {
+    width: 40px;
+  }
+
+  .prev-btn {
+    left: 0px;
+    border-radius: 3px;
+
+    background-color: #047982;
+  }
+
+  .next-btn {
+    background-color: #047982;
+    right: 0px;
+    border-radius: 3px;
+  }
+}
+
+.footer-text2 h2{
+=======
+.footer-text2 {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-.footer-text2 h2{
+
+.footer-text2 h2 {
+>>>>>>> bfe96457248b36b4579856f747fa9ba3fb7e6e44
     font-size: 2rem;
 }
 .logo-footer{
@@ -145,3 +345,4 @@ footer{
         width: 25%;
     }
 }
+

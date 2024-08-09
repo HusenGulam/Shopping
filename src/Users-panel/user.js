@@ -1,3 +1,4 @@
+
 const barsMain = document.getElementById("barsMain");
 const menuBar = document.querySelector("[data-menu-bar]");
 const mainNav = document.querySelector("[data-main-nav]");
@@ -130,3 +131,34 @@ nextBtn.addEventListener("click", () => {
 // Initialize carousel and start auto-slide
 showItem(currentIndex);
 startAutoSlide();
+
+
+
+
+
+
+
+
+
+
+try{
+  async function homeGeneralProduct(){
+    await fetch("https://66b47c1f9f9169621ea321ce.mockapi.io/products")
+    .then(res => res.json())
+    .then(data => createHomeProduct(data))
+
+
+    function createHomeProduct(product){
+
+      
+
+      console.log(product);
+    }
+  
+
+  }
+  homeGeneralProduct();
+}catch(e){
+  console.log(e.message);
+}
+

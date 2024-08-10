@@ -136,6 +136,9 @@ footer h5{
         width: 40%;
         margin: 0 auto;
     }
+    hr{
+        display: none;
+    }
 }
 @media screen and (max-width:552px) {
     .passage1{

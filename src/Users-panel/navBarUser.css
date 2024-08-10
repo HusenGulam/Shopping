@@ -27,6 +27,11 @@
 
 header {
     width: 100%;
+<<<<<<< HEAD
+=======
+    height: 80vh;
+    margin-bottom: 6rem;
+>>>>>>> 94d70f24196415c64ff61b316fe6e22c23d3fd93
     height: auto;
     margin-bottom: 100px;
 }
@@ -40,13 +45,21 @@ header nav {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 94d70f24196415c64ff61b316fe6e22c23d3fd93
 header nav ul {
     display: flex;
     align-items: center;
     gap: 4rem;
 }
 
+<<<<<<< HEAD
 header nav ul li a {
+=======
+header nav  ul li a {
+>>>>>>> 94d70f24196415c64ff61b316fe6e22c23d3fd93
     transition: 0.2s all ease-out;
     font-size: 1.3rem;
     font-weight: 600;
@@ -66,7 +79,11 @@ header nav ul li a:after {
     transition: 0.3s;
 }
 
+<<<<<<< HEAD
 header nav ul li a:hover:after {
+=======
+header nav  ul li a:hover:after {
+>>>>>>> 94d70f24196415c64ff61b316fe6e22c23d3fd93
     width: 100%;
 }
 
@@ -90,7 +107,12 @@ header nav ul li a:hover:after {
 }
 
 .modalSearch {
+<<<<<<< HEAD
     position: fixed;
+=======
+
+    position:fixed;
+>>>>>>> 94d70f24196415c64ff61b316fe6e22c23d3fd93
     top: 6.2rem;
     left: 0.2rem;
 
@@ -297,6 +319,7 @@ header nav ul li a:hover:after {
     }
 
     .modalSearch {
+        
         top: 8.2rem;
     }
 

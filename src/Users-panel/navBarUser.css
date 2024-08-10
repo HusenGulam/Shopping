@@ -29,6 +29,8 @@ header {
     width: 100%;
     height: 80vh;
     margin-bottom: 6rem;
+    height: auto;
+    margin-bottom: 100px;
 }
 
 header nav {
@@ -40,18 +42,14 @@ header nav {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-header nav .container {
-    width: 100%;
-    margin: 0 auto;
-}
 
-header nav .container ul {
+header nav ul {
     display: flex;
     align-items: center;
     gap: 4rem;
 }
 
-header nav .container ul li a {
+header nav  ul li a {
     transition: 0.2s all ease-out;
     font-size: 1.3rem;
     font-weight: 600;
@@ -60,7 +58,7 @@ header nav .container ul li a {
     letter-spacing: 0.7px;
 }
 
-header nav .container ul li a:after {
+header nav ul li a:after {
     content: "";
     position: absolute;
     background-color: #047982;
@@ -71,7 +69,7 @@ header nav .container ul li a:after {
     transition: 0.3s;
 }
 
-header nav .container ul li a:hover:after {
+header nav  ul li a:hover:after {
     width: 100%;
 }
 
@@ -92,6 +90,44 @@ header nav .container ul li a:hover:after {
 
 #loginBtn:active {
     transform: scale(90%);
+}
+
+.modalSearch {
+
+    position:fixed;
+    top: 6.2rem;
+    left: 0.2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+#searchInp {
+    border-radius: 5px;
+    padding: 15px 50px;
+    font-size: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#searchInp::placeholder {
+    color: #047982;
+}
+
+#searchInp:focus {
+    outline-style: auto;
+    outline-color: #047982;
+}
+
+#searchBtn {
+    padding: 16px 30px;
+    border-radius: 3px 8px 8px 3px;
+    font-size: 1rem;
+    background: #047982;
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 #barsMain {
@@ -318,6 +354,7 @@ header nav .container ul li a:hover:after {
     }
 
     .modalSearch {
+        
         top: 8.2rem;
     }
 

@@ -6,6 +6,7 @@
 /* Footer */
 footer{
     background-color: rgb(32, 155,162 );
+    color: #fff;
     
 }
 .double-passages{
@@ -32,14 +33,14 @@ footer{
     gap: 10px;
 }
 .footer-text1 small{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .footer-text1 h2{
     font-size: 2rem;
 }
 .footer-text2 a{
-    font-size: 1rem;
-    color: black;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
 }
 .footer-text2{
     display: flex;
@@ -53,6 +54,8 @@ footer{
     width: 25%;
     height: 9vh;
 }
+
+
 .logologologo{
     width: 86%;
     margin: 0 auto;
@@ -80,35 +83,43 @@ footer{
     border-radius: 7px;
     padding: 10px;
     font-size: 1rem;
+    border: none;
+    outline: none;
 }
 .inputbla button{
     height: 6vh;
     width: 22%;
-    background-color: orange;
+    background-color: #fff;
     border: none;
     border-radius: 7px;
     font-size: 1.1rem;
-    color: aliceblue;
+    color: #00eeff;
     font-weight: bold;
     transition-duration: 1.5s;
 }
 .inputbla button:hover{
-    background-color: black;
-    color: orange;
+    background-color: #00eeff;
+    color: rgb(255, 255, 255);
 }
 .social-media{
     display: flex;
     align-items: center;
     width: 40%;
-    gap: 3px;
+    margin-top: 20px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+footer h5{
+    font-size: 15px;
 }
 .social-media img{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 6px;
 }
 .passage3{
     margin: 0 auto; width: 12%; display: flex; justify-content: space-between;
+    color: #ffffff;
 }
 @media screen and (max-width:852px) {
     .double-passages{

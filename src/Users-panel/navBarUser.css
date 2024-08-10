@@ -14,19 +14,11 @@
 }
 
 #logo {
-    position: relative;
-    right: 4rem;
-    transition: 0.2s all ease-out;
-    width: 300px;
-    height: 90px;
+  position: relative;
+  right: 4rem;
   transition: 0.2s all ease-out;
   width: 300px;
   height: 90px;
-    transition: 0.2s all ease-out;
-    width: 300px;
-    height: 90px;
-    position: relative;
-    right: 5rem;
 }
 
 #logo:hover {
@@ -37,11 +29,6 @@ header {
   width: 100%;
   height: auto;
   margin-bottom: 100px;
-    width: 100%;
-    height: 80vh;
-    margin-bottom: 6rem;
-    height: auto;
-    margin-bottom: 100px;
 }
 
 header nav {
@@ -53,13 +40,11 @@ header nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-
 header nav ul {
   display: flex;
   align-items: center;
   gap: 4rem;
 }
-
 
 header nav ul li a {
   transition: 0.2s all ease-out;
@@ -81,8 +66,8 @@ header nav ul li a:after {
   transition: 0.3s;
 }
 
-header nav  ul li a:hover:after {
-    width: 100%;
+header nav ul li a:hover:after {
+  width: 100%;
 }
 
 #loginBtn {
@@ -105,14 +90,13 @@ header nav  ul li a:hover:after {
 }
 
 .modalSearch {
+  position: fixed;
+  top: 6.2rem;
+  left: 0.2rem;
 
-    position: fixed;
-    top: 6.2rem;
-    left: 0.2rem;
-
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 #searchInp {
@@ -152,57 +136,6 @@ header nav  ul li a:hover:after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-}
-
-/* Footer */
-.double-passages {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.passage1 {
-    width: 50%;
-}
-
-.trouble-text-footer {
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footer-text1 {
-    width: 28%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.footer-text1 small {
-    font-size: 1rem;
-}
-
-.footer-text1 h2 {
-    font-size: 2rem;
-}
-
-.footer-text2 a {
-    font-size: 1rem;
-    color: black;
-}
-
-.footer-text2 {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.footer-text2 h2 {
-    font-size: 2rem;
 }
 
 .menuBar {
@@ -327,127 +260,6 @@ header nav  ul li a:hover:after {
   right: 20px;
   border-radius: 3px;
 }
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 150px;
-}
-
-.carousel {
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
-    width: 1500px;
-    height: 500px;
-    display: flex;
-    align-items: center;
-}
-
-.carousel-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.5s ease;
-}
-
-.carousel-image {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-.carousel-content {
-    width: 70%;
-    position: relative;
-    color: white;
-    z-index: 1;
-    padding: 20px;
-    max-width: 80%;
-    background: transparent;
-    border-radius: 15px;
-    transform: translateY(10px);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    background-color: #047a8282;
-}
-
-.carousel-content:hover {
-    transform: translateY(0);
-    background-color: #047a82dc;
-}
-
-.carousel-title {
-    font-size: 2.5rem;
-    margin: 0 0 10px 0;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.carousel-description {
-    font-size: 1.2rem;
-    margin: 0 0 10px 0;
-}
-
-.carousel-price {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 10px 0;
-    color: red;
-}
-
-.carousel-discount {
-    font-size: 1.2rem;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-.carousel button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-    font-size: 2rem;
-    z-index: 10;
-    transition: background 0.3s ease;
-}
-
-.carousel button:hover {
-    background: #047982;
-}
-
-.prev-btn {
-    left: 20px;
-    border-radius: 3px;
-    background-color: #047982;
-}
-
-.next-btn {
-    background-color: #047982;
-    right: 20px;
-    border-radius: 3px;
-}
-
-@media (max-width: 1650px) {
-    header nav {
-        margin-top: 1rem;
-    }
-
-    header nav .container ul {
-        display: none;
-    }
 
 @media (max-width: 1650px) {
   header nav {
@@ -516,7 +328,8 @@ header nav  ul li a:hover:after {
 @media (max-width: 768px) {
   .carousel {
     width: 90%;
-    height: 50vh; /* Adjust height for smaller screens */
+    height: 50vh;
+    /* Adjust height for smaller screens */
   }
 
   .carousel-title {
@@ -544,7 +357,8 @@ header nav  ul li a:hover:after {
 @media (max-width: 450px) {
   .carousel {
     width: 90%;
-    height: 30vh; /* Adjust height for smaller screens */
+    height: 30vh;
+    /* Adjust height for smaller screens */
   }
 
   .carousel-title {
@@ -580,75 +394,6 @@ header nav  ul li a:hover:after {
     border-radius: 3px;
   }
 }
-    .carousel {
-        width: 90%;
-        height: 50vh;
-        /* Adjust height for smaller screens */
-    }
-
-    .carousel-title {
-        font-size: 2rem;
-    }
-
-    .carousel-description {
-        font-size: 1rem;
-    }
-
-    .carousel-price {
-        font-size: 1.2rem;
-    }
-
-    .carousel-discount {
-        font-size: 1rem;
-    }
-
-    button {
-        font-size: 1.5rem;
-        padding: 10px;
-    }
-}
-
-@media (max-width: 450px) {
-    .carousel {
-        width: 90%;
-        height: 30vh;
-        /* Adjust height for smaller screens */
-    }
-
-    .carousel-title {
-        font-size: 1rem;
-    }
-
-    .carousel-description {
-        font-size: 1rem;
-    }
-
-    .carousel-price {
-        font-size: 1.2rem;
-    }
-
-    .carousel-discount {
-        font-size: 1rem;
-    }
-
-    .carousel button {
-        width: 40px;
-    }
-
-    .prev-btn {
-        left: 0px;
-        border-radius: 3px;
-
-        background-color: #047982;
-    }
-
-    .next-btn {
-        background-color: #047982;
-        right: 0px;
-        border-radius: 3px;
-    }
-}
-
 
 @media (max-width: 575px) {
   .menuActive .container2 ul {
@@ -661,15 +406,6 @@ header nav  ul li a:hover:after {
 }
 
 @media (max-width: 500px) {
-    .menuActive {
-        height: auto;
-    }
-
-    .menuActive .container2 ul {
-        padding: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
   .menuActive {
     height: auto;
   }

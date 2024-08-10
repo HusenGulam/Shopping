@@ -98,3 +98,122 @@ main .container #product_general_box .electronics .product img:hover {
     position: relative;
     left: 2rem;
 }
+
+.modalLoginGeneral {
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    height: auto;
+    min-height: 100vh;
+    display: none;
+}
+
+#modalLoginCloseBtn {
+    transition: 0.1s all ease-in;
+    cursor: pointer;
+    font-size: 3rem;
+    color: #FFFF;
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+}
+
+#modalLoginCloseBtn:active {
+    transform: rotate(90deg);
+}
+
+.modalLogin {
+    z-index: 1;
+    position: absolute;
+    width: 500px;
+    height: 550px;
+    display: grid;
+    place-items: center;
+    border-radius: 14px;
+    background: #FFFF;
+}
+
+.modalLoginRow {
+    line-height: 4rem;
+}
+
+
+.modalLoginRow form {
+    position: relative;
+    left: 1.5rem;
+}
+
+#modalLoginTitle {
+    cursor: pointer;
+    font-size: 2.5rem;
+    bottom: 4rem;
+    position: relative; 
+    text-align: center;
+}
+
+#modalLoginInp {
+    font-size: 1rem;
+    padding: 15px 135px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+#modalLoginInp:focus {
+    outline-color: #047982;
+    outline-style: groove;
+}
+
+#modalLoginInp::placeholder {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#modalLoginInp:focus::placeholder {
+    font-size: 1rem;
+    color: #047982;
+}
+
+#modalLoginNum {
+    font-size: 1rem;
+    padding: 15px 135px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+#modalLoginNum:focus {
+    outline-color: #047982;
+    outline-style: groove;
+}
+
+#modalLoginNum::placeholder {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#modalLoginNum:focus::placeholder {
+    font-size: 1rem;
+    color: #047982;
+}
+
+#modalLoginSubmit {
+    transition: 0.1s all ease-in;
+    float: right;
+    margin-top: 1rem;
+    margin-right: 3rem;
+    padding: 15px 50px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    color: #FFFF;
+    font-weight: 600;
+    cursor: pointer;
+    background: #047982;
+}
+
+#modalLoginSubmit:active {
+    transform: scale(95%);
+}

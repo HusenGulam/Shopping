@@ -1,22 +1,15 @@
-<<<<<<< HEAD
-/* Footer */
 
-footer {
-    position: relative;
-    top: 10rem;
-}
 
-footer{
-    background-color: rgb(32, 155,162 );
-    
-}
-.double-passages{
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+main{
     width: 100%;
+    height: auto;
 }
-=======
->>>>>>> 06c42e35fcaa4c81c714ab9e8c13ea2fa9a8606c
 
+
+.container{
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    border: 1px solid red;
+}

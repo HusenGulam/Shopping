@@ -26,6 +26,7 @@
 header {
     width: 100%;
     height: 80vh;
+    
 }
 
 header nav {
@@ -92,7 +93,6 @@ header nav .container ul li a:hover:after {
 }
 
 .modalSearch {
-    z-index: 1;
     position: fixed;
     top: 6.2rem;
     left: 0.2rem;
@@ -141,53 +141,51 @@ header nav .container ul li a:hover:after {
 }
 
 
+
+
+
+
+
+
 /* Footer */
-.double-passages {
+.double-passages{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-
-.passage1 {
+.passage1{
     width: 50%;
 }
-
-.trouble-text-footer {
+.trouble-text-footer{
     width: 70%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-.footer-text1 {
+.footer-text1{
     width: 28%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
-.footer-text1 small {
+.footer-text1 small{
     font-size: 1rem;
 }
-
-.footer-text1 h2 {
+.footer-text1 h2{
     font-size: 2rem;
 }
-
-.footer-text2 a {
+.footer-text2 a{
     font-size: 1rem;
     color: black;
 }
-
-.footer-text2 {
+.footer-text2{
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-
-.footer-text2 h2 {
+.footer-text2 h2{
     font-size: 2rem;
 }
 
@@ -207,19 +205,19 @@ header nav .container ul li a:hover:after {
     align-items: center;
     justify-content: center;
     margin-top: 150px;
-}
-
-.carousel {
-    border-radius: 20px;
+  }
+  
+  .carousel {
+      border-radius: 20px;
     position: relative;
     overflow: hidden;
     width: 70%;
     height: 50vh; /* Increase height for better visibility */
     display: flex;
     align-items: center;
-}
-
-.carousel-item {
+  }
+  
+  .carousel-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -228,9 +226,9 @@ header nav .container ul li a:hover:after {
     height: 100%;
     transition: transform 0.5s ease;
     background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
-}
-
-.carousel-image {
+  }
+  
+  .carousel-image {
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -239,10 +237,10 @@ header nav .container ul li a:hover:after {
     top: 0;
     left: 0;
     z-index: -1;
-}
-
-.carousel-content {
-    width: 70%;
+  }
+  
+  .carousel-content {
+      width: 70%;
     position: relative;
     color: white;
     z-index: 1;
@@ -252,38 +250,38 @@ header nav .container ul li a:hover:after {
     border-radius: 15px;
     transform: translateY(10px);
     transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.carousel-content:hover {
+  }
+  
+  .carousel-content:hover {
     transform: translateY(0);
     background-color: #047a8267; /* Darker background on hover */
-}
-
-.carousel-title {
+  }
+  
+  .carousel-title {
     font-size: 2.5rem;
     margin: 0 0 10px 0;
     font-weight: bold;
     transition: color 0.3s ease;
-}
-
-.carousel-description {
+  }
+  
+  .carousel-description {
     font-size: 1.2rem;
     margin: 0 0 10px 0;
-}
-
-.carousel-price {
+  }
+  
+  .carousel-price {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 10px 0;
-}
-
-.carousel-discount {
+  }
+  
+  .carousel-discount {
     font-size: 1.2rem;
     color: #ff6f61; /* Bright discount color */
     font-weight: bold;
-}
-
-.carousel button {
+  }
+  
+  .carousel button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -295,25 +293,25 @@ header nav .container ul li a:hover:after {
     font-size: 2rem;
     z-index: 10;
     transition: background 0.3s ease;
-}
-
-.carousel button:hover {
+  }
+  
+  .carousel button:hover {
     background: #047982;
-}
-
-.prev-btn {
+  }
+  
+  .prev-btn {
     left: 20px;
     border-radius: 3px;
-
+  
     background-color: #047982;
-}
-
-.next-btn {
+  }
+  
+  .next-btn {
     background-color: #047982;
     right: 20px;
     border-radius: 3px;
-}
-
+  }
+  
 
 @media (max-width: 1650px) {
 
@@ -382,72 +380,72 @@ header nav .container ul li a:hover:after {
 
 @media (max-width: 768px) {
     .carousel {
-        width: 90%;
-        height: 50vh; /* Adjust height for smaller screens */
+      width: 90%;
+      height: 50vh; /* Adjust height for smaller screens */
     }
-
+  
     .carousel-title {
-        font-size: 2rem;
+      font-size: 2rem;
     }
-
+  
     .carousel-description {
-        font-size: 1rem;
+      font-size: 1rem;
     }
-
+  
     .carousel-price {
-        font-size: 1.2rem;
+      font-size: 1.2rem;
     }
-
+  
     .carousel-discount {
-        font-size: 1rem;
+      font-size: 1rem;
     }
-
+  
     button {
-        font-size: 1.5rem;
-        padding: 10px;
+      font-size: 1.5rem;
+      padding: 10px;
     }
-}
-
-@media (max-width: 450px) {
+  }
+  
+  @media (max-width: 450px) {
     .carousel {
-        width: 90%;
-        height: 30vh; /* Adjust height for smaller screens */
+      width: 90%;
+      height: 30vh; /* Adjust height for smaller screens */
     }
-
+  
     .carousel-title {
-        font-size: 1rem;
+      font-size: 1rem;
     }
-
+  
     .carousel-description {
-        font-size: 1rem;
+      font-size: 1rem;
     }
-
+  
     .carousel-price {
-        font-size: 1.2rem;
+      font-size: 1.2rem;
     }
-
+  
     .carousel-discount {
-        font-size: 1rem;
+      font-size: 1rem;
     }
-
+  
     .carousel button {
-        width: 40px;
+      width: 40px;
     }
-
+  
     .prev-btn {
-        left: 0px;
-        border-radius: 3px;
-
-        background-color: #047982;
+      left: 0px;
+      border-radius: 3px;
+  
+      background-color: #047982;
     }
-
+  
     .next-btn {
-        background-color: #047982;
-        right: 0px;
-        border-radius: 3px;
+      background-color: #047982;
+      right: 0px;
+      border-radius: 3px;
     }
-}
-
+  }
+  
 
 @media (max-width: 575px) {
     .menuActive .container2 ul {

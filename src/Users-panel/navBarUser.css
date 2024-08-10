@@ -14,17 +14,19 @@
 }
 
 #logo {
-<<<<<<< HEAD
+    position: relative;
+    right: 4rem;
+    transition: 0.2s all ease-out;
+    width: 300px;
+    height: 90px;
   transition: 0.2s all ease-out;
   width: 300px;
   height: 90px;
-=======
     transition: 0.2s all ease-out;
     width: 300px;
     height: 90px;
     position: relative;
     right: 5rem;
->>>>>>> 59da26b04846fdf568dc32156cb858e941f10a8a
 }
 
 #logo:hover {
@@ -32,17 +34,14 @@
 }
 
 header {
-<<<<<<< HEAD
   width: 100%;
   height: auto;
   margin-bottom: 100px;
-=======
     width: 100%;
     height: 80vh;
     margin-bottom: 6rem;
     height: auto;
     margin-bottom: 100px;
->>>>>>> 59da26b04846fdf568dc32156cb858e941f10a8a
 }
 
 header nav {
@@ -54,11 +53,13 @@ header nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
+
 header nav ul {
   display: flex;
   align-items: center;
   gap: 4rem;
 }
+
 
 header nav ul li a {
   transition: 0.2s all ease-out;
@@ -80,8 +81,8 @@ header nav ul li a:after {
   transition: 0.3s;
 }
 
-header nav ul li a:hover:after {
-  width: 100%;
+header nav  ul li a:hover:after {
+    width: 100%;
 }
 
 #loginBtn {
@@ -104,13 +105,14 @@ header nav ul li a:hover:after {
 }
 
 .modalSearch {
-  position: fixed;
-  top: 6.2rem;
-  left: 0.2rem;
 
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
+    position: fixed;
+    top: 6.2rem;
+    left: 0.2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
 }
 
 #searchInp {
@@ -145,20 +147,13 @@ header nav ul li a:hover:after {
 }
 
 .rowFirst {
-<<<<<<< HEAD
   width: 90%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-=======
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
+}
 
 /* Footer */
 .double-passages {
@@ -208,7 +203,6 @@ header nav ul li a:hover:after {
 
 .footer-text2 h2 {
     font-size: 2rem;
->>>>>>> 59da26b04846fdf568dc32156cb858e941f10a8a
 }
 
 .menuBar {
@@ -221,7 +215,6 @@ header nav ul li a:hover:after {
 }
 
 .carusel_section {
-<<<<<<< HEAD
   width: 100%;
   height: auto;
   display: flex;
@@ -334,9 +327,8 @@ header nav ul li a:hover:after {
   right: 20px;
   border-radius: 3px;
 }
-=======
     width: 100%;
-    height: 50vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -347,8 +339,8 @@ header nav ul li a:hover:after {
     border-radius: 20px;
     position: relative;
     overflow: hidden;
-    width: 70%;
-    height: 50vh; /* Increase height for better visibility */
+    width: 1500px;
+    height: 500px;
     display: flex;
     align-items: center;
 }
@@ -361,7 +353,6 @@ header nav ul li a:hover:after {
     width: 100%;
     height: 100%;
     transition: transform 0.5s ease;
-    background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
 }
 
 .carousel-image {
@@ -382,15 +373,16 @@ header nav ul li a:hover:after {
     z-index: 1;
     padding: 20px;
     max-width: 80%;
-    background: transparent; /* Darker background for better contrast */
+    background: transparent;
     border-radius: 15px;
     transform: translateY(10px);
     transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: #047a8282;
 }
 
 .carousel-content:hover {
     transform: translateY(0);
-    background-color: #047a8267; /* Darker background on hover */
+    background-color: #047a82dc;
 }
 
 .carousel-title {
@@ -409,11 +401,12 @@ header nav ul li a:hover:after {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 10px 0;
+    color: red;
 }
 
 .carousel-discount {
     font-size: 1.2rem;
-    color: #ff6f61; /* Bright discount color */
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -438,7 +431,6 @@ header nav ul li a:hover:after {
 .prev-btn {
     left: 20px;
     border-radius: 3px;
-
     background-color: #047982;
 }
 
@@ -448,7 +440,14 @@ header nav ul li a:hover:after {
     border-radius: 3px;
 }
 
->>>>>>> 59da26b04846fdf568dc32156cb858e941f10a8a
+@media (max-width: 1650px) {
+    header nav {
+        margin-top: 1rem;
+    }
+
+    header nav .container ul {
+        display: none;
+    }
 
 @media (max-width: 1650px) {
   header nav {
@@ -515,7 +514,6 @@ header nav ul li a:hover:after {
 }
 
 @media (max-width: 768px) {
-<<<<<<< HEAD
   .carousel {
     width: 90%;
     height: 50vh; /* Adjust height for smaller screens */
@@ -582,10 +580,10 @@ header nav ul li a:hover:after {
     border-radius: 3px;
   }
 }
-=======
     .carousel {
         width: 90%;
-        height: 50vh; /* Adjust height for smaller screens */
+        height: 50vh;
+        /* Adjust height for smaller screens */
     }
 
     .carousel-title {
@@ -613,7 +611,8 @@ header nav ul li a:hover:after {
 @media (max-width: 450px) {
     .carousel {
         width: 90%;
-        height: 30vh; /* Adjust height for smaller screens */
+        height: 30vh;
+        /* Adjust height for smaller screens */
     }
 
     .carousel-title {
@@ -650,7 +649,6 @@ header nav ul li a:hover:after {
     }
 }
 
->>>>>>> 59da26b04846fdf568dc32156cb858e941f10a8a
 
 @media (max-width: 575px) {
   .menuActive .container2 ul {
@@ -663,6 +661,15 @@ header nav ul li a:hover:after {
 }
 
 @media (max-width: 500px) {
+    .menuActive {
+        height: auto;
+    }
+
+    .menuActive .container2 ul {
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
   .menuActive {
     height: auto;
   }

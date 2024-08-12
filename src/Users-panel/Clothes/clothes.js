@@ -172,3 +172,77 @@ try {
 } catch (e) {
   console.log(e.message);
 }
+
+// Js for modalLogin Start
+
+
+const loginBtn = document.querySelector("[data-login-btn]");
+const modalLoginGeneral = document.querySelector("[data-modal-login-general]");
+const modalLoginCloseBtn = document.querySelector("[data-modal-login-close-btn]");
+
+loginBtn.addEventListener("click", () => {
+    modalLoginGeneral.style.display = "block";
+    modalLoginGeneral.style.display = "grid";
+    modalLoginGeneral.style.placeItems = "center";
+});
+
+modalLoginCloseBtn.addEventListener("click", () => {
+    modalLoginGeneral.style.display = "none";
+});
+
+
+const form = document.getElementById("userForm");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    if (e == "") {
+        alert("Your input empty 😔");
+    } else {
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
+        fetch("https://66b7a2257f7b1c6d8f1c6378.mockapi.io/user/user", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        })
+            .then((response) => response.json())
+            .then((data) => console.log(data))
+            .catch((err) => console.log(err));
+
+        e.target.reset();
+
+        modalLoginGeneral.style.display = "none";
+
+        alert("You succes sent your information 🎉");
+
+    }
+});
+
+
+async function userData() {
+    await fetch("https://66b7a2257f7b1c6d8f1c6378.mockapi.io/user/user", {
+    })
+        .then((response) => response.json())
+        .then((data) => {
+            ifFunc(data);
+        });
+}
+
+
+
+const ifFunc = (user) => {
+
+    if (user) {
+        loginBtn.innerText = `${user.name}`
+    }
+    else {
+        loginBtn.innerText = `Log in`
+    }
+}
+
+
+
+// Js for modalLogin End

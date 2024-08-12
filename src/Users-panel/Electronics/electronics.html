@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>F17-Shopping | Electronics</title>
     <link rel="stylesheet" href="../navBarUser.css">
     <link rel="stylesheet" href="../user.css" />
     <link rel="stylesheet" href="./electronics.css">
@@ -24,7 +24,11 @@
             <div class="container">
                 <div class="rowFirst">
                     <i class="fas fa-solid fa-bars" id="barsMain"></i>
+<<<<<<< HEAD
                     <a id="logo1" href="user.html"><img id="logo" src="../logo.png" /></a>
+=======
+                    <a id="logo1" href="../user.html"><img id="logo" src="../logo.png" /></a>
+>>>>>>> 13f5e0aa5be02574e0b4c842df3a41065b74cfde
                     <ul>
                         <li><a href="../user.html">Home</a></li>
                         <li><a href="../Electronics/electronics.html">Electronics</a></li>
@@ -33,12 +37,35 @@
                         <li><a href="../Accessories/accessories.html">Accessories</a></li>
                         <li><a href="../Food/food.html">Food</a></li>
                     </ul>
+<<<<<<< HEAD
                     <button id="loginBtn">
                         <i class="fas fa-regular fa-user"></i> Log in
                     </button>
                 </div>
             </div>
         </nav>
+=======
+                    <button id="loginBtn" data-login-btn>
+                        <i class="fas fa-regular fa-user"></i> Log in</button>
+                </div>
+            </div>
+        </nav>
+        <div class="modalLoginGeneral" data-modal-login-general>
+            <i class="fas fa-solid fa-xmark" id="modalLoginCloseBtn" data-modal-login-close-btn></i>
+            <div class="modalLogin">
+                <div class="modalLoginRow">
+                    <h1 id="modalLoginTitle">Log in</h1>
+                    <form id="userForm">
+                        <input type="text" id="modalLoginInp" name="username" maxlength="20" minlength="3" placeholder="Name"
+                            data-modal-login-inp required autofocus>
+                        <input type="number" id="modalLoginNum" name="number" minlength="13" maxlength="13"
+                            placeholder="+998 (00) 000-00-00" data-modal-login-num required> <br>
+                        <button id="modalLoginSubmit" type="submit">Log in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+>>>>>>> 13f5e0aa5be02574e0b4c842df3a41065b74cfde
         <div class="container">
             <div class="carusel_section">
                 <div class="carousel" id="carousel">

@@ -2,14 +2,14 @@ main {
     margin-bottom: 10rem;
 }
 
-main .container #product_general_box .electronics {
+main .container #product_general_box .clothes {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
-main .container #product_general_box .electronics .product {
+main .container #product_general_box .clothes .product {
     padding: 15px;
     width: 350px;
     height: auto;
@@ -19,16 +19,16 @@ main .container #product_general_box .electronics .product {
     border: 0.5px solid rgba(0, 0, 0, 0.3);
 }
 
-main .container #product_general_box .electronics .product:hover {
+main .container #product_general_box .clothes .product:hover {
     box-shadow: 0px 2px 8px #9c9a9a;
 }
 
-main .container #product_general_box .electronics .product:active {
+main .container #product_general_box .clothes .product:active {
     transform: scale(97.5%);
 }
 
 
-main .container #product_general_box .electronics .product img {
+main .container #product_general_box .clothes .product img {
     transition: 0.2s all ease-in;
     cursor: pointer;
     width: 100%;
@@ -36,7 +36,7 @@ main .container #product_general_box .electronics .product img {
     margin-bottom: 0.7rem;
 }
 
-main .container #product_general_box .electronics .product img:hover {
+main .container #product_general_box .clothes .product img:hover {
     transform: scale(105%);
 }
 

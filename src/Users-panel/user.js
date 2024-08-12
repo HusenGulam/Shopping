@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const carouselContainer = document.getElementById("carousel");
   const prevBtn = document.createElement("button");
   const nextBtn = document.createElement("button");
+  const selectType = document.getElementById("selecttype");
 
   prevBtn.className = "prev-btn";
   prevBtn.innerHTML = "&lt;";
@@ -45,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     reversedCarusel.forEach((item, index) => {
       const carouselItem = document.createElement("div");
       carouselItem.className = "carousel-item";
-      carouselItem.style.transform = `translateX(${index * 100}%)`;
+      carouselItem.style.transform = `translateX(${index * 100} %)`;
 
       const carouselImage = document.createElement("div");
       carouselImage.className = "carousel-image";
@@ -125,12 +126,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   fetchCarouselData();
 });
-
 try {
   async function homeGeneralProduct() {
+<<<<<<< HEAD
     await fetch("https://66b47c1f9f9169621ea321ce.mockapi.io/products")
       .then((res) => res.json())
       .then((data) => createHomeProduct(data));
+=======
+    const response = await fetch(
+      "https://66b47c1f9f9169621ea321ce.mockapi.io/products"
+    );
+    const data = await response.json();
+
+    createHomeProduct(data);
+
+    filterElement(data);
+
+>>>>>>> 13f5e0aa5be02574e0b4c842df3a41065b74cfde
     function createHomeProduct(product) {
       let sport = product.filter((item) => item.type == "sport");
       let clothes = product.filter((item) => item.type == "clothes");
@@ -170,12 +182,12 @@ try {
         box.appendChild(name);
         box.appendChild(about);
         let price = document.createElement("h5");
-        price.innerText = `${element.price}$`;
+        price.innerText = `${element.price} $`;
         box.appendChild(price);
         let discount = document.createElement("h4");
         let res = (element.price * element.discount) / 100;
         let resultPrice = Math.round(element.price - res);
-        discount.innerText = `${resultPrice}$`;
+        discount.innerText = `${resultPrice} $`;
         if (element.discount <= 0) {
           price.style.background = "yellow";
         } else {
@@ -213,13 +225,18 @@ try {
         about.innerText = `${element.about}`;
         box.appendChild(about);
         let price = document.createElement("h5");
-        price.innerText = `${element.price}$`;
+        price.innerText = `${element.price} $`;
         box.appendChild(price);
         let discount = document.createElement("h4");
         let res = (element.price * element.discount) / 100;
         let resultPrice = Math.round(element.price - res);
+<<<<<<< HEAD
         discount.innerText = `${resultPrice}$`;
         discount.innerText = `${resultPrice}$`;
+=======
+        discount.innerText = `${resultPrice} $`;
+        discount.innerText = `${resultPrice} $`;
+>>>>>>> 13f5e0aa5be02574e0b4c842df3a41065b74cfde
         if (element.discount <= 0) {
           price.style.background = "yellow";
         } else {
@@ -258,13 +275,18 @@ try {
         about.innerText = `${element.about}`;
         box.appendChild(about);
         let price = document.createElement("h5");
-        price.innerText = `${element.price}$`;
+        price.innerText = `${element.price} $`;
         box.appendChild(price);
         let discount = document.createElement("h4");
         let res = (element.price * element.discount) / 100;
         let resultPrice = Math.round(element.price - res);
+<<<<<<< HEAD
         discount.innerText = `${resultPrice}$`;
         discount.innerText = `${resultPrice}$`;
+=======
+        discount.innerText = `${resultPrice} $`;
+        discount.innerText = `${resultPrice} $`;
+>>>>>>> 13f5e0aa5be02574e0b4c842df3a41065b74cfde
         if (element.discount <= 0) {
           price.style.background = "yellow";
         } else {
@@ -282,7 +304,6 @@ try {
       section3.classList = "main_section";
       product_general_box.appendChild(section3);
       let reversedSport = sport.slice().reverse().slice(0, 4);
-
       reversedSport.forEach((element) => {
         let box = document.createElement("div");
         box.classList = "box";
@@ -304,13 +325,18 @@ try {
         about.innerText = `${element.about}`;
         box.appendChild(about);
         let price = document.createElement("h5");
-        price.innerText = `${element.price}$`;
+        price.innerText = `${element.price} $`;
         box.appendChild(price);
         let discount = document.createElement("h4");
         let res = (element.price * element.discount) / 100;
         let resultPrice = Math.round(element.price - res);
+<<<<<<< HEAD
         discount.innerText = `${resultPrice}$`;
         discount.innerText = `${resultPrice}$`;
+=======
+        discount.innerText = `${resultPrice} $`;
+        discount.innerText = `${resultPrice} $`;
+>>>>>>> 13f5e0aa5be02574e0b4c842df3a41065b74cfde
         if (element.discount <= 0) {
           price.style.background = "yellow";
         } else {
@@ -349,13 +375,18 @@ try {
         about.innerText = `${element.about}`;
         box.appendChild(about);
         let price = document.createElement("h5");
-        price.innerText = `${element.price}$`;
+        price.innerText = `${element.price} $`;
         box.appendChild(price);
         let discount = document.createElement("h4");
         let res = (element.price * element.discount) / 100;
         let resultPrice = Math.round(element.price - res);
+<<<<<<< HEAD
         discount.innerText = `${resultPrice}$`;
         discount.innerText = `${resultPrice}$`;
+=======
+        discount.innerText = `${resultPrice} $`;
+        discount.innerText = `${resultPrice} $`;
+>>>>>>> 13f5e0aa5be02574e0b4c842df3a41065b74cfde
         if (element.discount <= 0) {
           price.style.background = "yellow";
         } else {
@@ -365,8 +396,167 @@ try {
         }
       });
     }
+
+    function filterElement(products) {
+      const searchInput = document.getElementById("searchInp");
+      let main = document.getElementById("search_general_box");
+      // main.innerHTML = "";
+
+      searchInput.addEventListener("input", (e) => {
+        const query = e.target.value.toLowerCase();
+        let product_general_box = document.getElementById(
+          "product_general_box"
+        );
+
+        product_general_box.style.display = "none";
+
+        const filteredData = data.filter((item) =>
+          item.name.toLowerCase().includes(query)
+        );
+
+        console.log(filteredData.length);
+
+        if (query) {
+          main.innerHTML = "";
+          let title4 = document.createElement("h1");
+
+          if (filteredData.length == 0) {
+            title4.innerHTML = `<a href="#l"> Not Found 404 </a>`;
+            title4.classList = "section_title";
+            title4.style.textAlign = "center";
+            title4.style.margin = "100px";
+            main.appendChild(title4);
+          } else {
+            let sectionSearched = document.createElement("section");
+            title4.innerHTML = `<a href="#l"> Results </a>`;
+            title4.classList = "section_title";
+            main.appendChild(title4);
+            sectionSearched.classList = "main_section1";
+            main.appendChild(sectionSearched);
+            let elements = filteredData.slice(0, 4);
+
+            elements.forEach((element) => {
+              let box = document.createElement("div");
+              box.classList = "box";
+              sectionSearched.appendChild(box);
+              let persent = document.createElement("div");
+              persent.classList = "discountDiv";
+              persent.innerText = `${element.discount}%`;
+              if (element.discount <= 0) {
+              } else {
+                box.appendChild(persent);
+              }
+              let img = document.createElement("img");
+              img.src = `${element.img}`;
+              box.appendChild(img);
+              let name = document.createElement("h3");
+              name.innerText = `${element.name}`;
+              box.appendChild(name);
+              let about = document.createElement("p");
+              about.innerText = `${element.about}`;
+              box.appendChild(about);
+              let price = document.createElement("h5");
+              price.innerText = `${element.price} $`;
+              box.appendChild(price);
+              let discount = document.createElement("h4");
+              let res = (element.price * element.discount) / 100;
+              let resultPrice = Math.round(element.price - res);
+              discount.innerText = `${resultPrice} $`;
+              discount.innerText = `${resultPrice} $`;
+              if (element.discount <= 0) {
+                price.style.background = "yellow";
+              } else {
+                box.appendChild(discount);
+                price.style.textDecoration = "line-through";
+                price.style.verticalAlign = "middle";
+              }
+            });
+          }
+        } else {
+          product_general_box.style.display = "block";
+        }
+      });
+    }
+
+    filterElement();
   }
   homeGeneralProduct();
 } catch (e) {
   console.log(e.message);
 }
+
+
+
+// Js for modalLogin Start
+
+
+const loginBtn = document.querySelector("#loginBtn");
+const modalLoginGeneral = document.querySelector("[data-modal-login-general]");
+const modalLoginCloseBtn = document.querySelector("[data-modal-login-close-btn]");
+
+loginBtn.addEventListener("click", () => {
+  modalLoginGeneral.style.display = "block";
+  modalLoginGeneral.style.display = "grid";
+  modalLoginGeneral.style.placeItems = "center";
+});
+
+modalLoginCloseBtn.addEventListener("click", () => {
+  modalLoginGeneral.style.display = "none";
+});
+
+
+const form = document.getElementById("userForm");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  if (e == "") {
+    alert("Your input empty 😔");
+  } else {
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData);
+    fetch("https://66b7a2257f7b1c6d8f1c6378.mockapi.io/user/user", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((err) => console.log(err));
+
+    e.target.reset();
+
+    modalLoginGeneral.style.display = "none";
+
+    alert("You succes sent your information 🎉");
+
+  }
+});
+
+
+async function userData() {
+  await fetch("https://66b7a2257f7b1c6d8f1c6378.mockapi.io/user/user", {
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      ifFunc(data);
+    });
+}
+
+
+
+const ifFunc = (user) => {
+
+  if (user) {
+    loginBtn.innerText = `${user.name}`
+  }
+  else {
+    loginBtn.innerText = `Log in`
+  }
+}
+
+
+
+// Js for modalLogin End

@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 try {
-    async function ElectronicsGeneralProduct() {
+    async function AccessoriesGeneralProduct() {
         await fetch("https://66b47c1f9f9169621ea321ce.mockapi.io/products")
             .then(res => res.json())
             .then(data => createHomeProduct(data))
@@ -139,16 +139,16 @@ try {
 
         function createHomeProduct(product) {
 
-            let electronics = product.filter((item) => item.type == "electronics")
+            let accessories = product.filter((item) => item.type == "Aksessuars")
 
             let product_general_box = document.getElementById("product_general_box");
 
-            electronics.forEach((item) => {
-                let electronicsMain = document.querySelector("[data-electronics]");
+            accessories.forEach((item) => {
+                let accessoriesMain = document.querySelector("[data-accessories]");
 
                 let discountAmount = (item.price * item.discount) / 100;
                 let finalPrice = item.price - discountAmount;
-                electronicsMain.innerHTML += `
+                accessoriesMain.innerHTML += `
                    <div class="product">
                        <img src="${item.img}" title="${item.name}" alt="${item.name}">
                        <h3 id="productName">${item.name}</h3>
@@ -161,18 +161,17 @@ try {
                    `;
             })
 
-            console.log(electronics);
+            console.log(accessories);
 
         }
 
 
     }
 
-    ElectronicsGeneralProduct();
+    AccessoriesGeneralProduct();
 } catch (e) {
     console.log(e.message);
 }
-
 
 // Js for modalLogin Start
 

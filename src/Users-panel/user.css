@@ -9,12 +9,19 @@ main {
   margin: 0 auto;
 }
 
-
+select{
+    width: 350px;
+    height: 60px;
+    border-radius: 14px;
+    outline: none;
+    font-size: large;
+}
 .searchBar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2rem;
+    margin-bottom: 50px;
 }
 
 .searchDiv {
@@ -68,13 +75,13 @@ main {
   width: 350px;
   border: 1px solid;
   border-radius: 14px;
-  height: 500px;
+  height: 450px;
   border: 0.5px solid rgba(0, 0, 0, 0.3);
   padding: 15px;
   transition-duration: 0.2s;
 }
 
-.box:hover:{
+.box:hover{
     box-shadow: 0px 2px 8px #9c9a9a;
 }
 
@@ -139,7 +146,8 @@ main {
 }
 
 .box p {
-  width: 60%;
+  width: 90%;
+  height: 70px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -544,4 +552,3 @@ main {
         margin-top: 40px;
       }
   }
-  

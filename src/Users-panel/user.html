@@ -39,6 +39,21 @@
                 </div>
             </div>
         </nav>
+        <div class="modalLoginGeneral" data-modal-login-general>
+            <i class="fas fa-solid fa-xmark" id="modalLoginCloseBtn" data-modal-login-close-btn></i>
+            <div class="modalLogin">
+                <div class="modalLoginRow">
+                    <h1 id="modalLoginTitle">Log in</h1>
+                    <form id="userForm">
+                        <input type="text" id="modalLoginInp" name="username" maxlength="20" minlength="3" placeholder="Name"
+                            data-modal-login-inp required autofocus>
+                        <input type="number" id="modalLoginNum" name="number" minlength="13" maxlength="13"
+                            placeholder="+998 (00) 000-00-00" data-modal-login-num required> <br>
+                        <button id="modalLoginSubmit" type="submit">Log in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
         <div class="container">
 
             <div class="carusel_section">

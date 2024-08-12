@@ -56,6 +56,7 @@ main .container #product_general_box .electronics .product img:hover {
 }
 
 #productAbout {
+    height: 40px;
     font-weight: 500;
     color: rgb(110, 110, 110);
     margin-bottom: 1.2rem;

@@ -174,6 +174,88 @@ try {
 }
 
 
+// function filterElement(products) {
+//     const searchInput = document.getElementById("searchInp");
+//     let main = document.getElementById("search_general_box");
+//     // main.innerHTML = "";
+
+//     searchInput.addEventListener("input", (e) => {
+//         const query = e.target.value.toLowerCase();
+//         let product_general_box = document.getElementById(
+//             "product_general_box"
+//         );
+
+//         product_general_box.style.display = "none";
+
+//         const filteredData = data.filter((item) =>
+//             item.name.toLowerCase().includes(query)
+//         );
+
+//         console.log(filteredData.length);
+
+//         if (query) {
+//             main.innerHTML = "";
+//             let title4 = document.createElement("h1");
+
+//             if (filteredData.length == 0) {
+//                 title4.innerHTML = <a href="#l"> Not Found 404 </a>;
+//                 title4.classList = "section_title";
+//                 title4.style.textAlign = "center";
+//                 title4.style.margin = "100px"
+//                 main.appendChild(title4);
+//             } else {
+//                 let sectionSearched = document.createElement("section");
+//                 title4.innerHTML = <a href="#l"> Results </a>;
+//                 title4.classList = "section_title";
+//                 main.appendChild(title4);
+//                 sectionSearched.classList = "main_section1";
+//                 main.appendChild(sectionSearched);
+//                 let elements = filteredData.slice(0, 4);
+
+//                 elements.forEach((element) => {
+//                     let box = document.createElement("div");
+//                     box.classList = "box";
+//                     sectionSearched.appendChild(box);
+//                     let persent = document.createElement("div");
+//                     persent.classList = "discountDiv";
+//                     persent.innerText = `${element.discount}%`;
+//                     if (element.discount <= 0) {
+//                     } else {
+//                         box.appendChild(persent);
+//                     }
+//                     let img = document.createElement("img");
+//                     img.src = `${element.img}`;
+//                     box.appendChild(img);
+//                     let name = document.createElement("h3");
+//                     name.innerText = `${element.name}`;
+//                     box.appendChild(name);
+//                     let about = document.createElement("p");
+//                     about.innerText = `${element.about}`;
+//                     box.appendChild(about);
+//                     let price = document.createElement("h5");
+//                     price.innerText = `${element.price} $`;
+//                     box.appendChild(price);
+//                     let discount = document.createElement("h4");
+//                     let res = (element.price * element.discount) / 100;
+//                     let resultPrice = Math.round(element.price - res);
+//                     discount.innerText = `${resultPrice} $`;
+//                     discount.innerText = `${resultPrice} $`;
+//                     if (element.discount <= 0) {
+//                         price.style.background = "yellow";
+//                     } else {
+//                         box.appendChild(discount);
+//                         price.style.textDecoration = "line-through";
+//                         price.style.verticalAlign = "middle";
+//                     }
+//                 });
+//             }
+//         } else {
+//             product_general_box.style.display = "block";
+//         }
+//     });
+// }
+
+
 // Js for modalLogin Start
 
 
@@ -217,7 +299,7 @@ form.addEventListener("submit", (e) => {
 
         modalLoginGeneral.style.display = "none";
 
-        alert("You succes sent your information 🎉");
+        alert("You succesully registerated 🎉");
 
     }
 });

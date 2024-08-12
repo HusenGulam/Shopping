@@ -1,82 +1,93 @@
-
-
-
-
-
 /* Footer */
-footer{
-    background-color: rgb(32, 155,162 );
+footer {
+    background-color: #212121;
     color: #fff;
+    height: 55vh;
+    display: flex;
+    align-items: center;
 }
-.double-passages{
+
+.double-passages {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-.passage1{
+
+.passage1 {
     width: 50%;
     height: 27vh;
 }
-.trouble-text-footer{
+
+.trouble-text-footer {
     width: 70%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.footer-text1{
+
+.footer-text1 {
     width: 28%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.footer-text1 small{
+
+.footer-text1 small {
     font-size: 1.2rem;
 }
-.footer-text1 h2{
+
+.footer-text1 h2 {
     font-size: 2rem;
 }
-.footer-text2 a{
+
+.footer-text2 a {
     font-size: 1.2rem;
     color: rgb(255, 255, 255);
 }
-.footer-text2{
+
+.footer-text2 {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-.footer-text2 h2{
+
+.footer-text2 h2 {
     font-size: 2rem;
 }
-.logo-footer{
+
+.logo-footer {
     width: 25%;
     height: 9vh;
 }
 
 
-.logologologo{
+.logologologo {
     width: 86%;
     margin: 0 auto;
 }
 
-.passage2{
+.passage2 {
     width: 49%;
     display: flex;
     flex-direction: column;
     height: 27vh;
     gap: 6px;
 }
-.footer-title{
+
+.footer-title {
     font-size: 2rem;
     color: antiquewhite;
 }
-.inputbla{
+
+.inputbla {
     width: 90%;
     display: flex;
     gap: 14px;
 }
-.inputbla input{
+
+.inputbla input {
     width: 55%;
     height: 6vh;
     border-radius: 7px;
@@ -85,7 +96,8 @@ footer{
     border: none;
     outline: none;
 }
-.inputbla button{
+
+.inputbla button {
     height: 6vh;
     width: 22%;
     background-color: #fff;
@@ -96,11 +108,13 @@ footer{
     font-weight: bold;
     transition-duration: 0.5s;
 }
-.inputbla button:hover{
+
+.inputbla button:hover {
     background-color: #00eeff;
     color: rgb(255, 255, 255);
 }
-.social-media{
+
+.social-media {
     display: flex;
     align-items: center;
     width: 40%;
@@ -108,50 +122,65 @@ footer{
     gap: 10px;
     margin-bottom: 20px;
 }
-footer h5{
+
+footer h5 {
     font-size: 15px;
 }
-.social-media img{
+
+.social-media img {
     width: 40px;
     height: 40px;
     border-radius: 6px;
 }
-.passage3{
-    margin: 0 auto; width: 12%; display: flex; justify-content: space-between;
+
+.passage3 {
+    margin: 0 auto;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
     color: #ffffff;
 }
+
 @media screen and (max-width:852px) {
-    .double-passages{
+    .double-passages {
         flex-direction: column;
     }
-    .passage1{
+
+    .passage1 {
         width: 100%;
     }
-    .passage2{
+
+    .passage2 {
         width: 80%;
         margin: 0 auto;
     }
-    .passage3{
+
+    .passage3 {
         width: 40%;
         margin: 0 auto;
     }
 }
+
 @media screen and (max-width:552px) {
-    .passage1{
+    .passage1 {
         width: 100%;
     }
-    .trouble-text-footer{
+
+    .trouble-text-footer {
         width: 90%;
         margin: 0 auto;
     }
-    .passage2{
+
+    .passage2 {
         width: 90%;
         margin: 0 auto;
     }
-    .inputbla input{
+
+    .inputbla input {
         width: 70%;
     }
-    .inputbla button{
+
+    .inputbla button {
         width: 25%;
     }
 }

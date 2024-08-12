@@ -8,7 +8,6 @@ form.addEventListener("submit", (e) => {
   } else {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData);
-    const inp = document.querySelector("input").value == "";
     fetch("https://66b47c1f9f9169621ea321ce.mockapi.io/products", {
       method: "POST",
       headers: {

@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  justify-content: space-between;
+}
+main {
+  width: 85%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main h1 {
+  font-size: 60px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 50px;
+}
+
+main form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+main form label {
+  width: 40%;
+}
+
+main form label h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: gray;
+}
+main form input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border: solid 1px;
+  outline: none;
+  padding: 20px;
+  font-size: medium;
+}
+
+main form select {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border: solid 1px;
+  outline: none;
+  font-size: medium;
+}
+main form option {
+  height: 30px;
+}
+main form button {
+  width: 500px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 15px;
+  border: none;
+  font-size: large;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 150px;
+}

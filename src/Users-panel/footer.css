@@ -1,0 +1,186 @@
+/* Footer */
+footer {
+    background-color: #212121;
+    color: #fff;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+}
+
+.double-passages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.passage1 {
+    width: 50%;
+    height: 27vh;
+}
+
+.trouble-text-footer {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-text1 {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-text1 small {
+    font-size: 1.2rem;
+}
+
+.footer-text1 h2 {
+    font-size: 2rem;
+}
+
+.footer-text2 a {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+}
+
+.footer-text2 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-text2 h2 {
+    font-size: 2rem;
+}
+
+.logo-footer {
+    width: 25%;
+    height: 9vh;
+}
+
+
+.logologologo {
+    width: 86%;
+    margin: 0 auto;
+}
+
+.passage2 {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    height: 27vh;
+    gap: 6px;
+}
+
+.footer-title {
+    font-size: 2rem;
+    color: antiquewhite;
+}
+
+.inputbla {
+    width: 90%;
+    display: flex;
+    gap: 14px;
+}
+
+.inputbla input {
+    width: 55%;
+    height: 6vh;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+.inputbla button {
+    height: 6vh;
+    width: 22%;
+    background-color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    color: #00eeff;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+.inputbla button:hover {
+    background-color: #00eeff;
+    color: rgb(255, 255, 255);
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin-top: 20px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+footer h5 {
+    font-size: 15px;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.passage3 {
+    margin: 0 auto;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+@media screen and (max-width:852px) {
+    .double-passages {
+        flex-direction: column;
+    }
+
+    .passage1 {
+        width: 100%;
+    }
+
+    .passage2 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .passage3 {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:552px) {
+    .passage1 {
+        width: 100%;
+    }
+
+    .trouble-text-footer {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .passage2 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .inputbla input {
+        width: 70%;
+    }
+
+    .inputbla button {
+        width: 25%;
+    }
+}

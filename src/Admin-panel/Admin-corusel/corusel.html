@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | Carusel</title>
+
+  <link rel="stylesheet" href="../navBar.css" />
+  <link rel="stylesheet" href="./corusel.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
-    <h1>corusel</h1>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="../admin.html"><i class="fas fa-solid fa-house"></i>Home</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="../Admin-corusel/corusel.html"><i class="fas fa-solid fa-sliders"></i>Add Carousel</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="../Admin-add_product/product.html"><i class="fas fa-brands fa-product-hunt"></i>Add Products</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Add Carusel</h1>
+
+    <form method="dialog">
+      <label for="">
+        <h3>Img</h3>
+        <input type="url" name="img" placeholder="Img" required />
+      </label>
+      <label for="">
+        <h3>Title</h3>
+        <input type="text" name="title" placeholder="title" required />
+      </label>
+      <label for="">
+        <h3>Price</h3>
+        <input type="number" name="price" placeholder="Price" required />
+      </label>
+      <label for="">
+        <h3>Discount</h3>
+        <input type="number" name="discount" placeholder="Discount" />
+      </label>
+      <button type="submit">Add</button>
+    </form>
+  </main>
+  <script src="./corusel.js"></script>
 </body>
+
 </html>

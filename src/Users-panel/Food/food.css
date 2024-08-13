@@ -1,0 +1,222 @@
+main {
+    margin-bottom: 10rem;
+}
+
+main .container #product_general_box .foods {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+main .container #product_general_box .foods .product {
+    padding: 15px;
+    width: 350px;
+    height: auto;
+    min-height: 350px;
+    border-radius: 14px;
+    transition: 0.2s all ease-in;
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+main .container #product_general_box .foods .product:hover {
+    box-shadow: 0px 2px 8px #9c9a9a;
+}
+
+main .container #product_general_box .foods .product:active {
+    transform: scale(97.5%);
+}
+
+
+main .container #product_general_box .foods .product img {
+    transition: 0.2s all ease-in;
+    cursor: pointer;
+    width: 100%;
+    height: 310px;
+    margin-bottom: 0.7rem;
+}
+
+main .container #product_general_box .foods .product img:hover {
+    transform: scale(105%);
+}
+
+#productOldPrice {
+    align-items: end;
+    text-decoration-line: line-through;
+}
+
+.priceRow {
+    display: flex;
+    gap: 2rem;
+}
+
+#productName {
+    font-size: 1.1rem;
+    margin-bottom: 0.9rem;
+}
+
+#productAbout {
+    height: 40px;
+
+    font-weight: 500;
+    color: rgb(110, 110, 110);
+    margin-bottom: 1.2rem;
+    height: 60px;
+}
+
+#productNewPrice {
+    background: yellow;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.searchDiv {
+    border-radius: 14px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#searchInp {
+    text-align: center;
+    padding: 15px 50px;
+    border: none;
+    font-size: 1rem;
+}
+
+#searchInp:focus {
+    outline: none;
+}
+
+#searchIcon {
+    color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    left: 2rem;
+}
+
+.modalLoginGeneral {
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    height: auto;
+    min-height: 100vh;
+    display: none;
+}
+
+#modalLoginCloseBtn {
+    transition: 0.1s all ease-in;
+    cursor: pointer;
+    font-size: 3rem;
+    color: #FFFF;
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+}
+
+#modalLoginCloseBtn:active {
+    transform: rotate(90deg);
+}
+
+.modalLogin {
+    z-index: 1;
+    position: absolute;
+    width: 500px;
+    height: 550px;
+    display: grid;
+    place-items: center;
+    border-radius: 14px;
+    background: #FFFF;
+}
+
+.modalLoginRow {
+    line-height: 4rem;
+}
+
+
+.modalLoginRow form {
+    position: relative;
+    left: 1.5rem;
+}
+
+#modalLoginTitle {
+    cursor: pointer;
+    font-size: 2.5rem;
+    bottom: 4rem;
+    position: relative;
+    text-align: center;
+}
+
+#modalLoginInp {
+    font-size: 1rem;
+    padding: 15px 135px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+#modalLoginInp:focus {
+    outline-color: #047982;
+    outline-style: groove;
+}
+
+#modalLoginInp::placeholder {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#modalLoginInp:focus::placeholder {
+    font-size: 1rem;
+    color: #047982;
+}
+
+#modalLoginNum {
+    font-size: 1rem;
+    padding: 15px 135px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+#modalLoginNum:focus {
+    outline-color: #047982;
+    outline-style: groove;
+}
+
+#modalLoginNum::placeholder {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#modalLoginNum:focus::placeholder {
+    font-size: 1rem;
+    color: #047982;
+}
+
+#modalLoginSubmit {
+    transition: 0.1s all ease-in;
+    float: right;
+    margin-top: 1rem;
+    margin-right: 3rem;
+    padding: 15px 50px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    color: #FFFF;
+    font-weight: 600;
+    cursor: pointer;
+    background: #047982;
+}
+
+#modalLoginSubmit:active {
+    transform: scale(95%);
+}

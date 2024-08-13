@@ -1,0 +1,172 @@
+body {
+    display: flex;
+    gap: 1rem;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+main .container {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+#hrFirst {
+    position: relative;
+    right: 0.5rem;
+}
+
+#title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.indicators {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 2rem;
+}
+
+.indicators .indicator_1 {
+    border-radius: 25px;
+    display: grid;
+    place-items: center;
+    width: 25%;
+    height: 30vh;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #f7f7f7
+}
+
+.indicators .indicator_2 {
+    border-radius: 25px;
+    display: grid;
+    place-items: center;
+    width: 25%;
+    height: 30vh;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #f7f7f7
+}
+
+.indicators .indicator_3 {
+    border-radius: 25px;
+    display: grid;
+    place-items: center;
+    width: 25%;
+    height: 30vh;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #f7f7f7
+}
+
+.indicators .indicator_1 i {
+    font-size: 5rem;
+}
+
+.indicators .indicator_3 i {
+    font-size: 5rem;
+}
+
+
+.indicators .indicator_1 h1 {
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+.indicators .indicator_3 h1 {
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+.indicators .indicator_2 h1 {
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+.indicators .indicator_2 i {
+    font-size: 5rem;
+}
+
+#trendUp {
+    font-size: 35px;
+}
+
+#adgles-up {
+    font-size: 1rem;
+}
+
+.indicators .indicator_3 span {
+    cursor: pointer;
+    background-color: rgb(17, 210, 17);
+    border-radius: 20px;
+    padding: 10px;
+    color: #f7f7f7;
+}
+
+.topProductcontainer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#titleSecond {
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.secondHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchBox {
+    position: relative;
+    top: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#searchInp {
+    padding: 7px 40px;
+    font-size: 1.1rem;
+    border: none;
+}
+
+#searchInp:focus {
+    outline: none;
+}
+
+.searchBox {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#searchIcon {
+    position: relative;
+    left: 1rem;
+    color: gray;
+}
+
+#hrSecond {
+    position: relative;
+    right: 0.5rem;
+    top: 1rem;
+}
+
+.indicator_3_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.indicator_3 span {
+    position: absolute;
+    margin-left: 10rem;
+}

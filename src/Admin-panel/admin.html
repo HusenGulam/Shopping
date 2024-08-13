@@ -1,16 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin-panel</title>
     <link rel="stylesheet" href="admin.css">
+
+    <!-- style for navbar -->
+    <link rel="stylesheet" href="navBar.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
+
 <body>
 
 
-    
+<!-- header dan boshlab hammasini copy qilishingiz mumkin -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="../Admin-panel/admin.html"><i class="fas fa-solid fa-house"></i>Home</a></li>
+        </ul>
+        <ul>
+            <li><a href="../Admin-panel/Admin-corusel/corusel.html"><i class="fas fa-solid fa-sliders"></i>Add
+                Carousel</a></li>
+        </ul>
+        <ul>
+            <li><a href="../Admin-panel/Admin-add_product/product.html"><i
+                    class="fas fa-brands fa-product-hunt"></i>Add Products</a></li>
+        </ul>
+    </nav>
+</header>
 
-    
+<main>
+    <div class="container">
+        <h1 id="title">Analytics <i class="fas fa-solid fa-arrow-trend-up" id="trendUp"></i></h1>
+        <div class="indicators">
+            <div class="indicator_1">
+                <h2>Total Users</h2>
+                <i class="fas fa-solid fa-user"></i>
+                <h1>234+</h1>
+            </div>
+            <div class="indicator_2">
+                <h2>Total Products</h2>
+                <i class="fas fa-solid fa-bag-shopping"></i>
+                <h1>50+</h1>
+            </div>
+            <div class="indicator_3">
+                <div class="indicator_3_row">
+                    <h2>Earned Cash</h2>
+                    <span>8% <i class="fas fa-solid fa-angles-up" id="adgles-up"></i></span>
+                </div>
+                <i class="fas fa-solid fa-dollar-sign"></i>
+                <h1>27k+</h1>
+            </div>
+        </div>
+    </div>
+    <hr id="hrFirst">
+    <div class="topProductcontainer">
+        <div class="secondHeader">
+            <h1 id="titleSecond">Top Products</h1>
+            <div class="searchBox">
+                <i class="fas fa-solid fa-magnifying-glass" id="searchIcon"></i>
+                <input type="text" placeholder="search-product" id="searchInp">
+            </div>
+        </div>
+    </div>
+    <hr id="hrSecond">
+</main>
+
+
 </body>
+<<<<<<< HEAD
 </html> 
+=======
+
+</html>
+>>>>>>> 23d6aaa0e009904b5eb8acf786963593b4120656
